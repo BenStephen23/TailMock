@@ -11,15 +11,17 @@
 </head>
 <body class="bg-gray-800 text-white">
     <header class="bg-gray-100 text-gray-800 w-full">
+        <!-- navbar -->
         <nav class="container mx-auto py-4 flex justify-between">
             <div class="mx-2">
-                <h3 class="text-lg font-bold hover:text-blue-800">Stephen Ben</h3>
+                <h3 class="font-bold hover:text-blue-800 text-xl sm:text-4xl">Stephen Ben</h3>
             </div>
+            <!-- navlinks -->
             <div class="">
                 <ul class="flex mt-1">
-                    <li class="mx-1 text-sm hover:text-blue-500 hover:underline"><a href="#">Home</a></li>
-                    <li class="mx-1 text-sm hover:text-blue-500 hover:underline"><a href="#">Projects</a></li>
-                    <li class="mx-1 text-sm hover:text-blue-500 hover:underline"><a href="#">Contact</a></li>
+                    <li class="mx-0.5 sm:mx-1 hover:text-blue-500 hover:underline text-sm sm:text-2xl"><a href="#">Home</a></li>
+                    <li class="mx-0.5 sm:mx-1 hover:text-blue-500 hover:underline  text-sm sm:text-2xl"><a href="#">Projects</a></li>
+                    <li class="mx-0.5 sm:mx-1 hover:text-blue-500 hover:underline text-sm sm:text-2xl"><a href="#">Contact</a></li>
                 </ul>
             </div>
 
@@ -27,97 +29,140 @@
     </header>
 
     <section class="hero bg-cover bg-center mt-2">
-        <div class="container mx-auto flex flex-col items-center justify-center">
-            <h3 class="pt-2 text-2xl text-center text-gray-100">Passionate Developer and Recording Artist</h3>
+        <!-- hero with background image -->
+        <div class="container mx-auto flex justify-center">
+            <h3 class="pt-2 text-2xl md:text-4xl text-center text-gray-100">Passionate Developer and Recording Artist</h3>
         </div>
     </section>
 
-    <main>
-        <h3>Skills</h3>
-        <div>
-           <span>
-            <h5>Blockchain Expert</h5>
-            <p>Built a smart contract in Solidity</p>
+    <main class="container mx-auto mt-2 mb-2">
+        <!-- skills -->
+        <h3 class="text-2xl md:text-4xl md:pb-2 text-center text-white font-bold pb-2">Skills</h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 grid-rows-2 gap-4 px-4">
+            <!-- first skill -->
+           <span class="opacity-70 hover:opacity-100 hover:shadow-2xl">
+            <h5 class="font-bold text-xl md:text-2xl">Blockchain Expert</h5>
+            <p class="font-light mt-1 text-sm md:text-xl">Built a smart contract in Solidity</p>
            </span>
 
-           <span>
-            <h5>Musician</h5>
-            <p>Recorded and produced a grammy winning album</p>
+           <!-- second skill -->
+           <span class="opacity-70 hover:opacity-100 hover:shadow-2xl">
+            <h5 class="font-bold text-xl md:text-2xl">Musician</h5>
+            <p class="font-light mt-1 text-sm md:text-xl">Recorded and produced a grammy winning album</p>
            </span>
 
-           <span>
-            <h5>Software Developer</h5>
-            <p>Created and maintained web applications</p>
+           <!-- third skill -->
+           <span class="opacity-70 hover:opacity-100 hover:shadow-2xl">
+            <h5 class="font-bold text-xl md:text-2xl">Software Developer</h5>
+            <p class="font-light mt-1 text-sm md:text-xl">Created and maintained web applications</p>
            </span>
 
-           <span>
-            <h5>Web Developer</h5>
-            <p>Prorammed and designed web APIs</p>
+           <!-- fourth skill -->
+           <span class="opacity-70 hover:opacity-100 hover:shadow-2xl">
+            <h5 class="font-bold text-xl md:text-2xl">Web Developer</h5>
+            <p class="font-light mt-1 text-sm md:text-xl">Prorammed and designed web APIs</p>
            </span>
 
-           <span>
-            <h5>Song Writer</h5>
-            <p>Writer behind the highest grossing afrobeats song of all time</p>
+           <!-- fifth skill -->
+           <span class="opacity-70 hover:opacity-100 hover:shadow-2xl">
+            <h5 class="font-bold text-xl md:text-2xl">Song Writer</h5>
+            <p class="font-light mt-1 text-sm md:text-xl">Writer behind the highest grossing afrobeats song of all time</p>
            </span>
         </div>
     </main>
 
-    <section class="project">
-        <div>
-            <ul>
-                <li>
-                    <span>
-                        <img src="" alt="">
-                        <h5>Building my first ever app</h5>
-                        <p>This is my first ever app.</p>
-                    </span>
-                </li>
+    <section class="project bg-gray-100 text-gray-800 mt-6 py-2">
+        <!-- project -->
+        <h3 class="text-2xl md:text-4xl md:pb-2 text-center font-bold">Projects</h3>
+        <div class="flex flex-wrap justify-center">
+            <!-- First Card -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4 my-4">
+              <img class="w-full" src="tailimg/IMG_0403.jpg" alt="Card image">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 md:text-2xl">Building my first ever app</div>
+                <p class="text-gray-700 text-base md:text-xl">This is my first ever app.</p>
+              </div>
+            </div>
+          
+            <!-- Second Card -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4 my-4">
+              <img class="w-full" src="tailimg/IMG_0406.jpg" alt="Card image">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 md:text-2xl">Recording my first single</div>
+                <p class="text-gray-700 text-base md:text-xl">Inexperienced but the vibe on this night was out of this world</p>
+              </div>
+            </div>
 
-                <li>
-                    <span>
-                        <img src="" alt="">
-                        <h5>Recording my first single</h5>
-                        <p>Inexperienced but the vibe on this night was out of this world</p>
-                    </span>
-                </li>
-                
-                <li>
-                    <span>
-                        <img src="" alt="">
-                        <h5>Working on my first ever feature</h5>
-                        <p>Dealing with another workaholic has its pros and cons.</p>
-                    </span>
-                </li>
+            <!-- third card  -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4 my-4">
+              <img class="w-full" src="tailimg/IMG_0407.jpg" alt="Card image">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 md:text-2xl">Working on my first ever feature</div>
+                <p class="text-gray-700 text-base md:text-xl">Dealing with another workaholic has its pros and cons.</p>
+              </div>
+            </div>
 
-                <li>
-                    <span>
-                        <img src="" alt="">
-                        <h5>First ever community project</h5>
-                        <p>My best from all time, just below winning a grammy.</p>
-                    </span>
-                </li>
-            </ul>
-        </div>
+            <!-- fourth card -->
+            <div class="max-w-sm rounded overflow-hidden shadow-lg mx-4 my-4">
+              <img class="w-full" src="tailimg/IMG_0405.jpg" alt="Card image">
+              <div class="px-6 py-4">
+                <div class="font-bold text-xl mb-2 md:text-2xl">First ever community project</div>
+                <p class="text-gray-700 text-base md:text-xl">My best from all time, just below winning a grammy.</p>
+              </div>
+            </div>
+
+          </div>
+       
 
     </section>
 
-    <section class="contact">
-        <form>
-            <label for="name">Name</label>
-            <input type="text" placeholder="Enter your name">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Enter your email">
-            <label for="message">Message</label>
-            <textarea name="message" placeholder="Enter your message"></textarea>
-            <button type="submit">Submit</button>
+    <section class="contact bg-gray shadow-md rounded px-8 pt-4 pb-8 mb-4">
+        <!-- form -->
+        <h3 class="text-2xl md:text-4xl md:pb-2 text-center text-white font-bold">Contact Me</h3>
+        <form class="mb-4">
+            <label class="block text-white text-sm font-bold" for="name">Name</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-3" type="text" placeholder="Enter your name">
+            <label class="block text-white text-sm font-bold" for="email">Email</label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-3" type="email" placeholder="Enter your email">
+            <label class="block text-white text-sm font-bold" for="message">Message</label>
+            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none mb-3" name="message" placeholder="Enter your message"></textarea>
+            <div class="flex items-center justify-center">
+                <button class="bg-white text-gray-800 font-bold py-2 px-4 rounded hover:bg-gray-100 focus:outline-none" type="submit">Submit</button>
+            </div>
 
         </form>
 
     </section>
 
-    <footer>
-        <p>Copyright &copy; 2022 Stephen Ben. All rights reserved.</p>
-    </footer>
-    
+    <footer class="container mx-auto justify-center items-center pb-4">
+        <!-- footer, copyright -->
+        <p class="text-center text-sm md:text-lg font-semibold">Copyright &copy; 2022 Stephen Ben. All rights reserved.</p>
+
+        <!-- social media icons -->
+        <div class="flex justify-center items-center space-x-1 pt-2">
+
+            <a href="#" class="text-gray-300 hover:text-white mx-2">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm2.88-12.94c-.13-.29-.31-.54-.53-.76-.21-.21-.46-.39-.75-.52-.29-.13-.59-.2-.92-.2s-.63.07-.92.2c-.29.13-.54.31-.76.52-.21.21-.39.46-.52.76-.13.29-.19.6-.19.92s.06.63.19.92c.13.29.31.54.52.76.21.21.46.39.76.52.29.13.59.19.92.19s.63-.06.92-.19c.29-.13.54-.31.75-.52.22-.21.4-.46.53-.76.13-.29.19-.6.19-.92s-.06-.63-.19-.92zM15.5 13.69c-.17.39-.41.72-.71.99s-.66.49-1.09.65c-.42.16-.87.24-1.36.24-.52 0-.98-.08-1.39-.25-.42-.16-.77-.37-1.07-.63s-.54-.59-.71-.97c-.16-.39-.24-.81-.24-1.28s.08-.89.24-1.29c.17-.39.41-.72.71-.99s.66-.49 1.09-.65c.42-.16.87-.24 1.36-.24.49 0 .94.08 1.35.24.41.16.76.37 1.06.64.3.26.54.57.71.94.17.37.25.78.25 1.24s-.09.89-.26 1.28zM13.86 12c0-.11 0-.22-.01-.32.12 0 .24.01.36.01.25 0 .49-.01.73-.05.24-.01.47-.06.7-.12.24-.06.46-.14.67-.24.21-.11.41-.23.59-.38s.35-.33.49-.55c.14-.22.26-.48.35-.77s.14-.61.14-.96c0-.35-.05-.7-.15-1.05s-.25-.66-.44-.94c-.19-.28-.41-.52-.68-.72s-.57-.36-.92-.48c-.35-.13-.72-.19-1.11-.19-.15 0-.3 0-.45.01.15.04.29.1.43.18-.13-.09-.26-.16-.4-.22.14.04.28.08.43.11-.34-.19-.7-.31-1.08-.37-.38-.06-.76-.06-1.15 0 .4.06.77.17 1.12.37s.65.44.92.73c.27.29.49.62.68.98.19.36.34.74.44 1.15.1.41.15.83.15 1.27 0 .44-.05.87-.15 1.28-.1.41-.25.79-.44 1.15-.19.36-.42.69-.68.98-.27.29-.59.52-.92.73s-.67.35-1.12.47c.15.02.3.04.45.05.39 0 .77.05 1.11.15-.15-.04-.28-.08-.42-.12.26.1.51.2.75.32.24.11.47.24.69.39s.4.35.57.57c.17.22.31.47.43.75s.2.58.26.9c.06.32.09.66.09 1.03z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M8.5 20.18c7.03 0 10.87-5.8 10.87-10.86v-.49c.75-.54 1.4-1.21 1.92-1.98-.67.29-1.39.48-2.13.57.77-.46 1.36-1.2 1.64-2.08-.72.43-1.51.74-2.34.91-.67-.73-1.62-1.2-2.68-1.2-2.03 0-3.67 1.64-3.67 3.67 0 .29.03.57.1.84-3.05-.15-5.75-1.65-7.56-3.91-.32.55-.5 1.19-.5 1.87 0 1.28.65 2.41 1.63 3.07-.6-.02-1.17-.18-1.66-.46v.05c0 1.78 1.27 3.26 2.96 3.6-.31.09-.64.14-.98.14-.24 0-.47-.02-.7-.07.47 1.47 1.85 2.54 3.49 2.57-1.28 1.01-2.88 1.61-4.63 1.61-.3 0-.59-.02-.87-.05 1.64 1.05 3.58 1.66 5.68 1.66"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M15.65 22h-3.3v-8.32H11v-3h1.35V8.63c0-1.25.34-2.1 2.13-2.1h1.82v3h-1.35c-.27 0-.63.14-.63.67v1.32h2.07l-.27 3h-1.8V22z"/>
+                </svg>
+            </a>
+            <a href="#" class="text-gray-300 hover:text-white">
+                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.997 14.545c-1.553 0-2.818-1.265-2.818-2.817s1.265-2.818 2.818-2.818c1.552 0 2.817 1.266 2.817 2.818s-1.265 2.817-2.817 2.817m0-7.272c-2.27 0-4.118 1.847-4.118 4.118s1.848 4.118 4.118 4.118 4.118-1.848 4.118-4.118-1.848-4.118-4.118-4.118M19.729 3.51c-.237 0-.476.027-.712.08-2.234.416-4.126 1.558-5.384 3.32-1.26-1.762-3.15-2.904-5.383-3.32a7.77 7.77 0 0 0-.712-.08C4.31 3.51 3 4.82 3 6.374v11.252c0 1.554 1.31 2.864 2.955 2.864h11.252c1.645 0 2.955-1.31 2.955-2.864V6.375c0-1.553-1.31-2.864-2.955-2.864M18.87 17.627c0 .498-.413.91-.912.91H5.043c-.499 0-.912-.412-.912-.91v-8.123h2.073a7.664 7.664 0 0 0-.178 1.698c0 4.22 3.445 7.665 7.666 7.665 4.22 0 7.665-3.445 7.665-7.665 0-.586-.066-1.16-.19-1.71h2.07v8.122h.002z"/>
+                </svg>
+            </a>
+        </div>
+        </footer> 
+        
 </body>
 </html>
